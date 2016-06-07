@@ -1,0 +1,21 @@
+ul.menu {
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline;
+		margin-right: 10px;
+		a {
+			font-size: 15px;
+			padding: 10px;
+			font-family: $baseFont;
+			font-weight: bolder;
+			text-transform: uppercase;
+			color: $darkBlue;
+			transition: color 0.2s linear;
+			&:hover {
+				color: $teal;
+				border-bottom: 2px solid $darkBlue;
+			}
+		}
+	}
+}

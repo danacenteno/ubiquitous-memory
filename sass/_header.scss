@@ -1,0 +1,18 @@
+header {
+	background: #fff;
+	padding: 10px;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+		a {
+			color: $darkBlue;
+			transition: color 0.3s linear;
+			&:hover {
+				color: $teal;
+			}
+		}
+	}
+}
