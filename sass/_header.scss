@@ -8,10 +8,10 @@ header {
 		align-items: center;
 		
 		a {
-			color: $darkBlue;
+			color: navy;
 			transition: color 0.3s linear;
 			&:hover {
-				color: $teal;
+				color: teal;
 			}
 		}
 	}

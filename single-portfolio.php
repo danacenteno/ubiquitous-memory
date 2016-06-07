@@ -9,7 +9,7 @@
 
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         <?php
-        $projectimage = get_field('project_image');
+        $projectimage = get_field('project_images');
         ?>
         <img src="<?php echo $projectImage['url'] ?>"/>
         <h3>Used With:</h3>
@@ -21,7 +21,6 @@
 
             }
            ?>
-
 
         <?php the_content(); ?>
 
