@@ -16,3 +16,20 @@ header {
 		}
 	}
 }
+
+.hero {
+	background-image: url('https://unsplash.it/1200/800?image=615');
+	background-attachment:fixed;
+	background-size: cover;
+	margin: auto;
+	height: 90vh;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+

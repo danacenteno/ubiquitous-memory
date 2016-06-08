@@ -10,17 +10,11 @@
           <?php $projectimages = get_field('project_images'); ?>
           <img src="<?php echo $projectImage['url'] ?>"/>
           <h3>Used With:</h3>
-            <?php
-              while(has_sub_field('project_images')) {
-              ?>
-              <?php the_sub_field('image'); ?>
-              <?php the_sub_field('caption'); ?>
-
-              <?php
-              }
-             ?>
-          <?php the_content(); ?>
-        
+            <?php while(get_field('project_images')) { ?>
+            <?php the_sub_field('image'); ?>
+            <?php $image = get_sub_field('image'); ?>
+            <img src="<?php echo $image['sizes']['square'] ?>">
+            <?php the_sub_field('caption'); ?>
         <?php endwhile; // end the loop?>
     </div> <!-- /,content -->
 

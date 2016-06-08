@@ -12,7 +12,7 @@
 @import 'typography';
 @import 'navigation';
 @import 'header';
-@import 'about-page';
+@import 'about';
 @import 'skills';
 @import 'portfolio';
 @import 'contact';
@@ -48,18 +48,12 @@ body {
 	width: 100%;
 }
 
-.hero {
-	background-image: url('https://unsplash.it/1200/800?image=615');
-	background-attachment:fixed;
-	background-size: cover;
-	margin: auto;
-	height: 90vh;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center; }
+//General styling
 
+.wrapper {
+	width: 70%;
+	margin: auto;
+}
 
 
 
