@@ -4,13 +4,13 @@
 	Template Name: Full Page, No Sidebar
 */
 
-get_header();  ?>
+get_header(); ?>
 
 <div class="hero"> <!-- .hero header starts -->
 	
 </div> <!-- .hero header ends -->
 
-<div class="main">
+<div class="main"> <!-- main content starts -->
   <div class="container">
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -26,9 +26,16 @@ get_header();  ?>
 
     <?php endwhile; // end the loop?>
 
-    <section class="portfolio"> <!-- start .portfolio section -->
+    <section class="skillset"> <!-- .skillset section starts -->
+      <div class="skills"></div>
+      <div class="tools"></div>
+    </section> <!-- .skillset section ends -->
+
+    <!-- Portfolio section would be in between skills and contact, on separate php file -->
+
+    <section class="contact"> <!-- .contact section starts -->
       
-    </section> <!-- end .portfolio section -->
+    </section> <!-- .contact section ends -->
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 
