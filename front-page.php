@@ -37,19 +37,37 @@ get_header(); ?>
     <?php endwhile; // end the loop?>
 
     <section id="dem-skillz" class="skillset"> <!-- .skillset section starts -->
-      <div class="wrapper">
-        <div class="skills-copy">
+      <div class="wrapper"> <!-- .wrapper starts -->
+        <div class="skills-copy"> <!-- .skills-copy starts -->
           <h4>Things I know</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat sint maxime voluptates at, culpa ex saepe nulla voluptatibus incidunt veniam!</p>
-        </div>
+        </div> <!-- .skills-copy ends -->
 
-        <div class="skills-icons"></div>
-      </div>
+        <div class="skills-icons"> <!-- .skills icons starts -->
+          <i class="devicons devicons-html5"></i>
+          <i class="devicons devicons-css3"></i>
+          <i class="devicons devicons-responsive"></i>
+          <i class="devicons devicons-javascript_badge"></i>
+          <i class="devicons devicons-jquery"></i>
+          <i class="devicons devicons-wordpress"></i>
+          <i class="devicons devicons-photoshop"></i>
+          <i class="devicons devicons-illustrator"></i>
+        </div> <!-- .skills icons ends -->
+
+        <div class="tools-icons"> <!-- .tools icons starts -->
+          <i class="devicons devicons-sass"></i>
+          <i class="devicons devicons-github"></i>
+          <i class="devicons devicons-git"></i>
+          <i class="devicons devicons-gulp"></i>
+          <i class="devicons devicons-trello"></i>
+          
+        </div> <!-- .tools icons ends -->
+      </div> <!-- .wrapper ends -->
     </section> <!-- .skillset section ends -->
 
-    <section class="portfolio">
+    <section class="portfolio"> <!-- .portfolio section starts -->
       
-    </section>
+    </section> <!-- .portfolio section ends -->
 
     <section class="contact"> <!-- .contact section starts -->
       
