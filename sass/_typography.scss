@@ -1,3 +1,8 @@
+html {
+	font-size: 62.5%;
+	font-family: 'Muli', sans-serif;
+}
+
 a {
 	color: indigo;
 	text-decoration: none;
@@ -6,10 +11,38 @@ a {
 	}
 }
 
+/* Titles */
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Roboto Slab', serif;
+}
+
+
+h1 {
+	font-size: 8rem;
+}
+
+h2 {
+	font-size: 5rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 6rem;
+}
+
 /* paragraphs */
 
 p {
+	font-family: 'Muli', sans-serif;
 	line-height: 1.5;
+	font-size: 1.5rem;
 }
 
 /*blockquotes*/

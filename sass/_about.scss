@@ -1,10 +1,29 @@
 .about {
-	background: aliceBlue;
-	p {
-		color: white;
+	background: aliceblue;
+	h2 {
+		text-align: center;
 	}
 }
 
-.bio-image {
-	border-radius: 50%;
+.about .wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
+
+.bio-copy {
+	background: #fff;
+	border: 12px solid black;
+	padding: 3% 5%;
+	color: midnightblue;
+	position: relative;
+	top: 5%;
+	right: 5%;
+
+}
+
+.bio-image {
+	width: 40%;
+	box-shadow: 3px 3px 10px dimGray;
+}	
