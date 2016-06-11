@@ -1,0 +1,40 @@
+.portfolio {
+	background: #F5F5F5;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+.project-one,
+.project-two,
+.project-three,
+.project-four {
+	width: 50%;
+	height: 400px;
+	padding: 5%;
+	// display: flex;
+	// flex-direction: column;
+}
+
+.project-one {
+	background: #C8E6FF;
+}
+
+.project-two {
+	background: #EDD3D4;
+}
+
+.project-three {
+	background: #DDD5E9;
+}
+
+.project-four {
+	background: #CDE9E9;
+}
+
+.project-pic {
+	width: 50%;
+}

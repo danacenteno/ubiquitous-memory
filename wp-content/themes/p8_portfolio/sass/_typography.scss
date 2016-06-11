@@ -1,0 +1,135 @@
+html {
+	font-size: 62.5%;
+	font-family: 'Muli', sans-serif;
+}
+
+a {
+	color: indigo;
+	text-decoration: none;
+	&:hover {
+		color: #D424B1;
+	}
+}
+
+/* Titles */
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Roboto Slab', serif;
+}
+
+
+h1 {
+	font-size: 8rem;
+}
+
+h2 {
+	font-size: 5rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 6rem;
+}
+
+h5 {
+	font-size: 2.5rem;
+	// text-align: center;
+}
+
+/* paragraphs */
+
+p {
+	font-family: 'Muli', sans-serif;
+	line-height: 1.5;
+	font-size: 1.5rem;
+}
+
+/*blockquotes*/
+
+blockquote {
+	background: #F7F7F7;
+	margin: 0;
+	padding: 20px;
+	p {
+		margin-top: 0;
+	}
+}
+
+/*tables*/
+
+table {
+	td {
+		padding: 10px;
+	}
+	tr td:first {
+		padding-right: 0;
+	}
+}
+
+/*def lists*/
+
+dt {
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+dd {
+	padding: 10px;
+	margin-left: 10px;
+}
+
+/*lists*/
+
+ul li, ol li {
+	padding: 3px;
+}
+
+/*PRE*/
+
+pre {
+	background: #F7F7F7;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+
+/*
+====================================
+Global Classes / Wordpress Specific
+====================================
+*/
+
+.aligncenter {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+img {
+	&.alignleft {
+		padding-right: 5px;
+	}
+	&.alignright {
+		padding-left: 5px;
+	}
+}
+
+.clear {
+	width: 100%;
+	float: left;
+	clear: both;
+}

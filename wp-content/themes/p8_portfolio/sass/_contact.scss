@@ -1,0 +1,27 @@
+.contact .wrapper{
+	display: flex;
+	align-items: flex;
+	justify-content: space-between;
+
+	form {
+
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			width: 450px;
+			border: none;
+			border-bottom: 3px solid black;
+		}
+
+		input[type="submit"] {
+			border: none;
+			background: black;
+			color: white;
+			padding: 2% 10%;
+		}
+	}
+
+	p {
+	}
+}
+

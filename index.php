@@ -1,16 +1,17 @@
-<?php //index.php is the last resort template, if no other templates match ?>
-<?php get_header(); ?>
+<?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-<div class="main">
-  <div class="container">
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
 
-    <div class="content">
-    		<?php get_template_part( 'loop', 'index' );	?>
-    </div> <!--/.content -->
-
-    <?php get_sidebar(); ?>
-
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
-
-<?php get_footer(); ?>
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
