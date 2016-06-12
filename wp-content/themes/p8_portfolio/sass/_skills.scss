@@ -1,6 +1,6 @@
 .skillset {
 	background: $newsprint;
-	height: 100vh;
+	// height: 100vh;
 }
 
 .skillset .wrapper {
@@ -12,6 +12,7 @@
 .skills-icons,
 .tools-icons {
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	padding-left: 0;
 	margin: auto;

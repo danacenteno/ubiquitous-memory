@@ -25,7 +25,7 @@ get_header(); ?>
 
     <?php endwhile; // end the loop?>
 
-    <section class="portfolio"> <!-- .portfolio section starts -->
+    <section id="work" class="portfolio"> <!-- .portfolio section starts -->
     <?php
       $workQuery = new WP_Query(
         array(
@@ -46,10 +46,8 @@ get_header(); ?>
         </figure>
 
         <div class="project-copy"> <!-- .project-copy starts -->
-          <h5><?php the_title(); ?></h5>
-          <p class="description"><?php the_field('project_description');?></p>
-          <?php //the_content(); ?>
-
+          <h4><?php the_title(); ?></h4>
+      
           <?php the_sub_field('skills'); ?>
           <?php while( has_sub_field('skills') ): ?>
           
@@ -58,7 +56,9 @@ get_header(); ?>
           </div>
           <?php endwhile; ?>
 
-          <button><?php get_field('live_link') ?>See it live!</button>
+          <p class="description"><?php the_field('project_description');?></p>
+
+          <button class="live"><a href=""><?php get_field('live_link') ?>See it live!</a></button>
         </div> <!-- .project-copy ends -->
       </div> <!-- .pieces container ends -->
       <?php endwhile; ?>
@@ -145,7 +145,7 @@ get_header(); ?>
       </div> <!-- .wrapper ends -->
     </section> <!-- .skillset section ends -->
 
-    <section class="contact"> <!-- .contact section starts -->
+    <section id="emails" class="contact"> <!-- .contact section starts -->
       <h3>let's talk!</h3>
       <div class="wrapper">
         <p>Her resistance to the mind probe is considerable. It will be some time before we can extract any information from her. The final check-out is complete. All systems are operational. What course shall we set? Perhaps she would respond to an alternative form of persuasion. What do you mean? I think it is time we demonstrate the full power of this station. Set your course for Princess Leia's home planet of Alderaan. With pleasure.</p>

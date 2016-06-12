@@ -13,7 +13,7 @@
 
 <body <?php body_class(); ?>>
 
-<header>
+<header id="home">
 <nav> <!-- nav starts -->
   <?php wp_nav_menu( array( 
     'container' => false,
