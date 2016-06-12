@@ -52,13 +52,11 @@ function hackeryou_styles(){
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 
-	wp_enqueue_style('googleFonts', 'https://fonts.googleapis.com/css?family=Muli:400,400italic|Roboto+Slab:400,700');
+	wp_enqueue_style('googleFonts', 'https://fonts.googleapis.com/css?family=Lato:400,900|Source+Sans+Pro');
 
 	wp_enqueue_style('devicons', 'http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css');
 
 	wp_enqueue_style('moreDevicons', 'https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css');
-
-
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');

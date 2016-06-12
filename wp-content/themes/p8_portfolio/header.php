@@ -14,12 +14,22 @@
 <body <?php body_class(); ?>>
 
 <header>
-  <div class="container">
+<nav> <!-- nav starts -->
+  <?php wp_nav_menu( array( 
+    'container' => false,
+    'theme_location' => 'primary'
+  )); ?>
+</nav> <!-- nav ends -->
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_location' => 'primary'
-    )); ?>
+  <div class="container">
+    <div class="hero"> <!-- .hero header starts -->
+     <div class="hero-text"> <!-- .hero-text starts -->
+        <h1>
+            <?php bloginfo( 'name' ); ?>
+        </h1>
+        <h2>front-end developer + designer</h2>
+      </div> <!-- .hero-text ends -->
+    </div> <!-- .hero header ends -->
   </div> <!-- /.container -->
 </header><!--/.header-->
 

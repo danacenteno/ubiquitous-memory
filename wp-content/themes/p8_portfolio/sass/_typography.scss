@@ -1,13 +1,13 @@
 html {
 	font-size: 62.5%;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Source Sans', sans-serif;
 }
 
 a {
 	color: indigo;
 	text-decoration: none;
 	&:hover {
-		color: #D424B1;
+		color: $silver-blue;
 	}
 }
 
@@ -17,20 +17,26 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Lato', sans-serif;
+	color: $dark-accent;
+	margin: 0;
+	padding: 0;
 }
 
 
 h1 {
-	font-size: 8rem;
+	font-size: 12rem;
+	color: #fff;
 }
 
 h2 {
 	font-size: 5rem;
+	// color: #001832;
 }
 
 h3 {
-	font-size: 2rem;
+	padding-bottom: 4%;
+	font-size: 5rem;
 }
 
 h4 {
@@ -45,9 +51,10 @@ h5 {
 /* paragraphs */
 
 p {
-	font-family: 'Muli', sans-serif;
+	color: #333;
+	font-family: 'Source Sans', sans-serif;
 	line-height: 1.5;
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 }
 
 /*blockquotes*/

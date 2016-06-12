@@ -1,8 +1,27 @@
 .about {
+	background: #f7f7f7;
 	height: 70vh;
-	background: #D8CBD7;
+	// background: #D8CBD7;
 	h2 {
 		text-align: center;
+	}
+
+	h3 {
+		position: relative;
+		&:after {
+			position: absolute;
+			content: '';
+			border-bottom: 7px solid $silver-blue;
+			top:0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 53%;
+		}
+	}
+
+	p {
+		font-size: 2rem;
 	}
 }
 
@@ -10,13 +29,11 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .bio-copy {
-	background: #fff;
-	padding: 3% 5%;
-	background: #8AADCA;
+	padding: 0 5% 3%;
 	color: white;
 	position: relative;
 	top: 5%;
@@ -25,10 +42,8 @@
 }
 
 .bio-image {
-	width: 40%;
-	box-shadow: 1px 1px 1px dimGray;
+	position: relative;
+	bottom: 5%;
+	width: 47%;
+	// box-shadow: 1px 1px 1px dimGray;
 }	
-
-h3 {
-	text-align: center;
-}

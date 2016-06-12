@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <p>&copy; Dana Centeno <?php echo date('Y'); ?></p>
+    <p>Designed & Developed with &hearts; by Dana Centeno</p>
   </div>
 </footer>
 

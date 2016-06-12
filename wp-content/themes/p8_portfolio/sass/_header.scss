@@ -1,6 +1,5 @@
 header {
-	// background: #fff;
-	// padding: 10px;
+	background: $mauve;
 
 	.container {
 		display: flex;
@@ -17,11 +16,22 @@ header {
 	}
 }
 
+
+nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
 .hero {
 	// background-image: url('https://unsplash.it/1200/800?image=848');
 	// background-attachment:fixed;
 	// background-size: cover;
 	// background: rgba(0,0,128,0.3);
+	// background: #d9c2ca;
+	width: 100%;
 	margin: auto;
 	height: 100vh;
 	padding: 20px;
@@ -36,34 +46,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
-	left: 13%;
-
-	h2 {
-		text-align: right;
-		position: relative;
-		line-height: 0;
-		margin: 0;
-		padding: 0;
-		padding-bottom: 12%;
-		&:after {
-			content: '';
-			position: absolute;
-			border-bottom: 10px solid black;
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 0;
-		}
-	}
-
 }
-
-h1 a,
-h2 {
-	color: #000;
-}
-
 
 
 

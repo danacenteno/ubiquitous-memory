@@ -1,0 +1,55 @@
+.skillset {
+	background: $newsprint;
+}
+
+.skillset .wrapper {
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+}
+	
+.skills-icons,
+.tools-icons {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin: auto;
+}
+
+.skills-icons {
+	justify-content: flex-start;
+}
+
+h3:nth-of-type(2) {
+	text-align: right;
+}
+
+.tools-icons {
+	.devicons,
+	.devicon-photoshop-plain,
+	.devicon-illustrator-plain {
+		color: $silver-blue;
+	}
+}
+
+figure {
+	.devicons:first-of-type {
+		padding-left: 0;
+	}
+
+	.devicons,
+	.devicon-photoshop-plain,
+	.devicon-illustrator-plain {
+		color: $mauve;
+		font-size: 7rem;
+		padding: 15px;
+		line-height: 1.5;
+	}
+
+	figcaption {
+		font-size: 1.2rem;
+		text-align: center;
+		// padding-top: 5%;
+	}
+}
+
