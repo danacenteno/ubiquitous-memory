@@ -26,47 +26,48 @@ get_header(); ?>
     <?php endwhile; // end the loop?>
 
     <section class="portfolio"> <!-- .portfolio section starts -->
-        <?php
-          $workQuery = new WP_Query(
-            array(
-              'posts_per_page' => -1,
-              'post_type' => 'portfolio',
-              'order' => 'ASC'
-              )
-            ); ?>
+    <?php
+      $workQuery = new WP_Query(
+        array(
+          'posts_per_page' => -1,
+          'post_type' => 'portfolio',
+          'order' => 'ASC'
+          )
+        ); ?>
 
-          <?php if ( $workQuery->have_posts() ) : ?>
+      <?php if ( $workQuery->have_posts() ) : ?>
 
-          <?php while ($workQuery->have_posts()) : $workQuery->the_post(); ?>
+      <?php while ($workQuery->have_posts()) : $workQuery->the_post(); ?>
 
-          <div id="<?php echo $post->post_name; ?>" class="pieces">
-            <figure>
-              <?php $image = get_field('project_image'); ?> 
-              <img src="<?php echo $image['sizes']['large'] ?>">
-            </figure>
+      <div id="<?php echo $post->post_name; ?>" class="pieces"> <!-- .pieces container starts -->
+        <figure>
+          <?php $image = get_field('project_image'); ?> 
+          <img src="<?php echo $image['sizes']['large'] ?>">
+        </figure>
 
-            <div class="project-copy"> <!-- .project-copy starts -->
-              <h5><?php the_title(); ?></h5>
-              <p class="description"><?php the_field('project_description');?></p>
-              <?php //the_content(); ?>
+        <div class="project-copy"> <!-- .project-copy starts -->
+          <h5><?php the_title(); ?></h5>
+          <p class="description"><?php the_field('project_description');?></p>
+          <?php //the_content(); ?>
 
-              <p><?php the_sub_field('skills'); ?></p>
-              <?php while( has_sub_field('skills') ): ?>
-              
-              <div class="skills">
-                <p><?php the_sub_field('skills_tags'); ?></p>
-              </div>
-              
-              <?php endwhile; ?>
-            </div> <!-- .project-copy ends -->
+          <?php the_sub_field('skills'); ?>
+          <?php while( has_sub_field('skills') ): ?>
+          
+          <div class="skills">
+            <p><?php the_sub_field('skills_tags'); ?></p>
           </div>
-                <?php endwhile; ?>
+          <?php endwhile; ?>
 
-                <?php wp_reset_postdata(); ?>
+          <button><?php get_field('live_link') ?>See it live!</button>
+        </div> <!-- .project-copy ends -->
+      </div> <!-- .pieces container ends -->
+      <?php endwhile; ?>
 
-            <?php else:  ?>
-                [stuff that happens if there aren't any posts]
-            <?php endif; ?>
+      <?php wp_reset_postdata(); ?>
+
+      <?php else:  ?>
+          [stuff that happens if there aren't any posts]
+      <?php endif; ?>
     </section> <!-- .portfolio section ends -->
 
     <section id="skillz" class="skillset"> <!-- .skillset section starts -->

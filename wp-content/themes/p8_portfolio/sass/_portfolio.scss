@@ -2,25 +2,19 @@
 	// background: #F5F5F5;
 	background: $silver-blue;
 
-	.wrapper {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-
 		.pieces {
+			width: 90%;
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
 			align-items: flex-start;
+			margin: auto;
 		}
-	}
 }
 
-// .project-copy {
-// 	display: flex;
-// 	flex-direction: column;
-// }
+.project-copy {
+	margin-left: 5%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
 
-// .project-img figure {
-// 	width: 50%;
-// }
