@@ -4,38 +4,23 @@
 
 	.wrapper {
 		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		.pieces {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
 	}
 }
 
-.project-one,
-.project-two,
-.project-three,
-.project-four {
-	width: 50%;
-	height: 400px;
-	padding: 5%;
-	// display: flex;
-	// flex-direction: column;
-}
+// .project-copy {
+// 	display: flex;
+// 	flex-direction: column;
+// }
 
-.project-one {
-	
-}
-
-.project-two {
-	
-}
-
-.project-three {
-	
-}
-
-.project-four {
-	
-}
-
-.project-pic {
-	
-}
+// .project-img figure {
+// 	width: 50%;
+// }

@@ -26,8 +26,6 @@ get_header(); ?>
     <?php endwhile; // end the loop?>
 
     <section class="portfolio"> <!-- .portfolio section starts -->
-     <!--  <h3>Work</h3> -->
-      <div class="wrapper">
         <?php
           $workQuery = new WP_Query(
             array(
@@ -41,11 +39,11 @@ get_header(); ?>
 
           <?php while ($workQuery->have_posts()) : $workQuery->the_post(); ?>
 
-          <div id="<?php echo $post->post_name; ?>" class="">
-            <div class="project-img"> <!-- .project-img starts -->
+          <div id="<?php echo $post->post_name; ?>" class="pieces">
+            <figure>
               <?php $image = get_field('project_image'); ?> 
               <img src="<?php echo $image['sizes']['large'] ?>">
-            </div> <!-- .project-img ends -->
+            </figure>
 
             <div class="project-copy"> <!-- .project-copy starts -->
               <h5><?php the_title(); ?></h5>
@@ -69,8 +67,6 @@ get_header(); ?>
             <?php else:  ?>
                 [stuff that happens if there aren't any posts]
             <?php endif; ?>
-      </div> <!-- .wrapper ends -->
-      
     </section> <!-- .portfolio section ends -->
 
     <section id="skillz" class="skillset"> <!-- .skillset section starts -->
