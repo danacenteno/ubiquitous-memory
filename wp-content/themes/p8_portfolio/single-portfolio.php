@@ -7,19 +7,16 @@
         while(have_posts()) {
           the_post();
         ?>
-        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+        <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
         <div class="image">
-          <h5><?php get_field('project_name') ?></h5>
-          <p><?php get_field('project_blurb') ?></p>
-            <?php
-              while(has_sub_field('project_images')) {
-              ?>
-              <?php
-              $image = get_sub_field('image');
-              ?>
-              <img class="project-pic" src="<?php echo $image['url']?>" />
+          <?php $image = get_field('project_image'); ?> 
+          <img src="<?php echo $image['sizes']['large'] ?>">
+          <p class="description"><?php the_field('project_description');?></p>
 
-              <p><?php the_sub_field('caption')?></p>
+            <?php
+              while(has_sub_field('skills')) {
+              ?>
+              <p class="tags"><?php the_sub_field('skills_tags');?></p>
             <?php
             }
            ?>

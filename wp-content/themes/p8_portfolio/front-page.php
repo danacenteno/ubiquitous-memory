@@ -28,22 +28,43 @@ get_header(); ?>
     <section class="portfolio"> <!-- .portfolio section starts -->
      <!--  <h3>Work</h3> -->
       <div class="wrapper">
-        <div class="project-one"> <!-- .project-one starts  -->
-          <button>View Live</button>
-        </div> <!-- .project-one ends -->
+        <?php
+          $workQuery = new WP_Query(
+            array(
+              'posts_per_page' => -1,
+              'post_type' => 'portfolio',
+              'order' => 'ASC'
+              )
+            ); ?>
 
-        <div class="project-two"> <!-- .project-two starts -->
-          <button>View Live</button>
-        </div> <!-- .project-two ends
-   -->
-        <div class="project-three"> <!-- .project-three starts -->
-          <button>View Live</button>
-        </div> <!-- .project-three ends -->
+            <?php if ( $workQuery->have_posts() ) : ?>
 
-        <div class="project-four"> <!-- .project-four starts -->
-          <button>View Live</button>
-        </div> <!-- .project-four ends -->
-      </div>
+              <?php while ($workQuery->have_posts()) : $workQuery->the_post(); ?>
+
+                <section id="<?php echo $post->post_name; ?>">
+                    <h5><?php the_title(); ?></h5>
+                    <?php $image = get_field('project_image'); ?> 
+                    <img src="<?php echo $image['sizes']['large'] ?>">
+                    <p class="description"><?php the_field('project_description');?></p>
+                    <?php the_content(); ?>
+
+                    <p><?php the_sub_field('skills'); ?></p>
+                    <div class="images">
+                        <?php while( has_sub_field('skills') ): ?>
+                            <div class="skills">
+                                <p><?php the_sub_field('skills_tags'); ?></p>
+                            </div>
+                        <?php endwhile; ?>
+                    </div>
+                </section>
+                <?php endwhile; ?>
+
+                <?php wp_reset_postdata(); ?>
+
+            <?php else:  ?>
+                [stuff that happens if there aren't any posts]
+            <?php endif; ?>
+      </div> <!-- .wrapper ends -->
       
     </section> <!-- .portfolio section ends -->
 
