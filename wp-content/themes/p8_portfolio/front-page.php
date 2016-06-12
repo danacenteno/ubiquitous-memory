@@ -37,26 +37,31 @@ get_header(); ?>
               )
             ); ?>
 
-            <?php if ( $workQuery->have_posts() ) : ?>
+          <?php if ( $workQuery->have_posts() ) : ?>
 
-              <?php while ($workQuery->have_posts()) : $workQuery->the_post(); ?>
+          <?php while ($workQuery->have_posts()) : $workQuery->the_post(); ?>
 
-                <section id="<?php echo $post->post_name; ?>">
-                    <h5><?php the_title(); ?></h5>
-                    <?php $image = get_field('project_image'); ?> 
-                    <img src="<?php echo $image['sizes']['large'] ?>">
-                    <p class="description"><?php the_field('project_description');?></p>
-                    <?php the_content(); ?>
+          <div id="<?php echo $post->post_name; ?>" class="">
+            <div class="project-img"> <!-- .project-img starts -->
+              <?php $image = get_field('project_image'); ?> 
+              <img src="<?php echo $image['sizes']['large'] ?>">
+            </div> <!-- .project-img ends -->
 
-                    <p><?php the_sub_field('skills'); ?></p>
-                    <div class="images">
-                        <?php while( has_sub_field('skills') ): ?>
-                            <div class="skills">
-                                <p><?php the_sub_field('skills_tags'); ?></p>
-                            </div>
-                        <?php endwhile; ?>
-                    </div>
-                </section>
+            <div class="project-copy"> <!-- .project-copy starts -->
+              <h5><?php the_title(); ?></h5>
+              <p class="description"><?php the_field('project_description');?></p>
+              <?php //the_content(); ?>
+
+              <p><?php the_sub_field('skills'); ?></p>
+              <?php while( has_sub_field('skills') ): ?>
+              
+              <div class="skills">
+                <p><?php the_sub_field('skills_tags'); ?></p>
+              </div>
+              
+              <?php endwhile; ?>
+            </div> <!-- .project-copy ends -->
+          </div>
                 <?php endwhile; ?>
 
                 <?php wp_reset_postdata(); ?>
