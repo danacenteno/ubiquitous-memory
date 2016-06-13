@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <p>Designed & Developed with &hearts; by Dana Centeno</p>
+    <p>Designed & Developed with &#9825; by Dana Centeno</p>
   </div>
 </footer>
 

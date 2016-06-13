@@ -27,7 +27,7 @@
         <h1>
             <?php bloginfo( 'name' ); ?>
         </h1>
-        <h2>front-end developer + designer</h2>
+        <h2>front-end developer & designer</h2>
       </div> <!-- .hero-text ends -->
     </div> <!-- .hero header ends -->
   </div> <!-- /.container -->

@@ -1,0 +1,81 @@
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	body {
+		border-top: 10px solid green;
+	}
+
+	ul.menu {
+		left: -17%;
+	}
+
+	.about h3 {
+		padding-top: 0;
+	}
+
+	.bio-image {
+		margin-top: 2%;
+	}
+
+	// portfolio images
+	figure {
+		width: 50%;
+	}
+
+	.project-copy {
+		margin-left: 5%;
+	}
+
+	.pieces:nth-child(even) {
+		.project-copy {
+			margin-right: 5%;
+		}
+	}
+
+	// project titles
+	h4 {
+		font-size: 2.75rem;
+		border-bottom: 5px solid $dark-accent;
+	}
+
+	p {
+		font-size: 1.5rem;
+	}
+
+	// skills section
+	.skills-icons,
+	.tools-icons {
+		display: flex;
+	}
+	
+	.skills-icons .devicons,
+	.tools-icons .devicons,
+	.tools-icons .devicon-photoshop-plain,
+	.tools-icons .devicon-illustrator-plain {
+		font-size: 6rem;
+	}
+
+	//contact section
+	.contact .wrapper {
+		width: 93%;
+
+		h5 {
+			margin-top: -2%;
+		}
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	body {
+		border-top: 10px solid red;
+	}
+	
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	body {
+		border-top: 10px solid yellow;
+	}
+}
