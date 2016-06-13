@@ -1,22 +1,23 @@
 ul.menu {
+	z-index: 10000000;
 	position: fixed;
 	margin: 0;
 	padding: 0;
 	transform: rotate(270deg);
 	top: 50%;
-	left: -10%;
+	left: -12%;
 	li {
 		display: inline;
 		margin-right: 10px;
 		a {
-			font-size: 1rem;
+			font-size: 1.25rem;
 			padding: 5px;
 			font-weight: bolder;
 			text-transform: uppercase;
 			color: $dark-accent;
 			transition: color 0.2s linear;
 			&:hover {
-				color: #fff;
+				// color: #fff;
 				border-bottom: 2px solid $dark-accent;
 			}
 		}
