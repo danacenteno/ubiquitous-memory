@@ -1,8 +1,7 @@
 .about {
 	z-index: 2;
-	background: #f7f7f7;
+	background: $newsprint;
 	position: relative;
-	// background: #D8CBD7;
 	h2 {
 		text-align: center;
 	}
@@ -17,7 +16,7 @@
 			bottom: 0;
 			left: 0;
 			right: 0;
-			width: 50%;
+			width: 36%;
 		}
 	}
 
@@ -30,7 +29,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .bio-copy {
@@ -39,6 +38,16 @@
 	top: 5%;
 	right: 5%;
 
+	.socmed .fa {
+		font-size: 3rem;
+		color: $silver-blue;
+		padding-right: 2%;
+		transition: color 0.3s linear; 
+		&:hover,
+		&:focus {
+			color: $mauve;
+		}
+	}
 }
 
 .bio-image {

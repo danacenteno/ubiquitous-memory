@@ -12,13 +12,20 @@ get_header(); ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
       <section id="bio" class="about"> <!-- start .about section -->
-        <div class="big-a">
+        <!-- <div class="big-a">
           <p>A</p>
-        </div>
+        </div> -->
         <div class="wrapper"> <!-- .wrapper starts -->
           <div class="bio-copy">
             <h3>about me</h3>
             <p class="bio-blurb"><?php the_field('bio'); ?></p> <!-- bio blurb custom field -->
+            <div class="socmed">
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-github"></i>
+              <i class="fa fa-linkedin"></i>
+              <i class="fa fa-"></i>
+              <i class="fa fa-"></i>
+            </div>
           </div>
 
           <?php $image = get_field('bio_image'); ?> <!-- bio image custom field 1/2-->
