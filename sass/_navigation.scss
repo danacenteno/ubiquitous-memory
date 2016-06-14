@@ -1,11 +1,12 @@
 ul.menu {
+	display: flex;
 	z-index: 10000000;
 	position: fixed;
 	margin: 0;
 	padding: 0;
 	transform: rotate(270deg);
 	top: 50%;
-	left: -12%;
+	left: -11.5%;
 	li {
 		display: inline;
 		margin-right: 10px;
@@ -16,10 +17,28 @@ ul.menu {
 			text-transform: uppercase;
 			color: $dark-accent;
 			transition: color 0.2s linear;
-			&:hover {
+			&:hover,
+			&:focus {
 				// color: #fff;
 				border-bottom: 2px solid $dark-accent;
 			}
 		}
 	}
+}
+
+.fa {
+	display: none;
+	cursor: pointer;
+}
+
+.fa-bars {
+	position: relative;
+	z-index: 10;
+}
+
+#home .fa {
+	visibility: hidden;
+	opacity: 0;
+	top: 12%;
+	font-size: 3rem;
 }

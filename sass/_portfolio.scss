@@ -34,7 +34,7 @@
 
 .pieces:nth-child(even) {
 	flex-direction: row-reverse;
-	margin: 5%;
+	margin:5%;
 
 	.project-copy {
 		margin-left: 0;
@@ -46,9 +46,20 @@
 	margin-bottom: 0;
 }
 
+.links {
+	display: flex;
+	justify-content: flex-start;
+
+	button {
+		margin-right: 3%;
+		button:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
 .live {
 	width: 30%;
-	margin: auto;
 	padding: 2%;
 	border: none;
 	background: $newsprint;

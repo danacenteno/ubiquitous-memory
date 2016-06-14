@@ -72,10 +72,11 @@ textarea {
 		color: $silver-blue;
 	}
 
-	.socmed .fa {
-		font-size: 3rem;
+	.socmed .fa,
+	.devicons {
+		font-size: 4rem;
 		color: $silver-blue;
-		padding-right: 2%;
+		padding-right: 3%;
 		transition: color 0.3s linear; 
 		&:hover,
 		&:focus {

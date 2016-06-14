@@ -1,6 +1,4 @@
 header {
-	// z-index: 10;
-	// position: relative;
 	background: $mauve;
 
 	.container {
@@ -26,13 +24,7 @@ nav {
 	align-items: center;
 }
 
-
 .hero {
-	// background-image: url('https://unsplash.it/1200/800?image=848');
-	// background-attachment:fixed;
-	// background-size: cover;
-	// background: rgba(0,0,128,0.3);
-	// background: #d9c2ca;
 	width: 100%;
 	margin: auto;
 	height: 100vh;
@@ -40,7 +32,6 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 }
 
 .hero-text {

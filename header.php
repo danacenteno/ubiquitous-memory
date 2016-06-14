@@ -14,12 +14,13 @@
 <body <?php body_class(); ?>>
 
 <header id="home">
-<nav> <!-- nav starts -->
-  <?php wp_nav_menu( array( 
-    'container' => false,
-    'theme_location' => 'primary'
-  )); ?>
-</nav> <!-- nav ends -->
+<div class="fa fa-bars fa-2x"></div>
+  <nav> <!-- nav starts -->
+    <?php wp_nav_menu( array( 
+      'container' => false,
+      'theme_location' => 'primary'
+    )); ?>
+  </nav> <!-- nav ends -->
 
   <div class="container">
     <div class="hero"> <!-- .hero header starts -->

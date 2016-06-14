@@ -3,6 +3,7 @@
 	h3 {
 	padding-bottom: 2%;
 	position: relative;
+
 	&:after {
 		position: absolute;
 		content: '';
@@ -12,8 +13,8 @@
 		left: 0;
 		right: 0;
 		width: 15%;
+		}
 	}
-}
 }
 
 .icons {

@@ -2,8 +2,10 @@ footer {
 	clear: both;
 	background: $silver-blue;
 	padding: 1%;
-	p {
-		text-align: center;
-		color: #fff;
+	.container {
+		p {
+			text-align: center;
+			color: #fff;
+		}
 	}
 }
