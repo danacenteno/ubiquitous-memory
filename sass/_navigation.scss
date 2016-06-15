@@ -1,5 +1,6 @@
 ul.menu {
 	display: flex;
+	flex-direction: row-reverse;
 	z-index: 10000000;
 	position: fixed;
 	margin: 0;

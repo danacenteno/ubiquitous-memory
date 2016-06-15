@@ -1,6 +1,4 @@
 .contact {
-	
-	height: 100vh;
 	background: $mauve;
 
 	h3 {
@@ -38,8 +36,8 @@
 		input[type="text"],
 		input[type="email"],
 		textarea {
-			background: none;
 			width: 400px;
+			background: none;
 			border: none;
 			border-bottom: 3px solid $silver-blue;
 		}

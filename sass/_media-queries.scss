@@ -1,10 +1,6 @@
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-	body {
-		border-top: 10px solid green;
-	}
-
 	.flexParent {
 		display: flex;
 		align-items: center;
@@ -82,16 +78,34 @@
 		font-size: 6rem;
 	}
 
-	//contact section
+	//Contact Section + footer
 	.contact .wrapper {
+		flex-direction: column;
+		width: 100%;
 		width: 93%;
 
 		h5 {
 			margin-top: -2%;
 		}
+
+		.contact-blurb {
+			text-align: center;
+			margin-right: 0;
+		}
+
+		form {
+			margin: 100px auto;
+			margin-bottom: 0;
+		}
 	}
 }
- 
+
+.contact p {
+	font-size: 1.75rem;
+	margin-right: 0;
+}
+
+// Additional Breakpoint 
 @media (max-width: 817px) {
 	h1 {
 		font-size: 11rem;
@@ -104,25 +118,20 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-	body {
-		border-top: 10px solid red;
-	}
-
 	h1 {
 		font-size: 10rem;
 	}
 
 	// Hamburger Menu
 	ul.menu {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		position: fixed;
 		top: 0;
 		left:0;
 		right: 0;
 		height: 100%;
 		width: 100%;
-		background: rgba(255,255,255,0.8);
-		flex-flow: column wrap;
+		background: rgba(255,255,255,0.8);	
 		text-align: center;
 		justify-content: center;
 		opacity: 0;
@@ -133,7 +142,7 @@
 	}
 
 	ul.menu.show {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		opacity: 1;
 		visibility: visible;
 		transform: scale(1);
@@ -145,7 +154,7 @@
 		font-size: 1rem;
 
 		a {
-			font-size: 4.5rem;
+			font-size: 4rem;
 		}
 	}
 
@@ -176,6 +185,45 @@
 		right: 6%;
 		font-size: 3rem;
 	}
+	
+	//About Section
+
+	.about .wrapper {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+
+	.bio-copy p {
+	}
+
+	.bio-image {
+		width: 75%;
+		margin-bottom: 5%;
+	}
+
+	// Portfolio Section
+	.pieces,
+	.pieces:nth-child(even) {
+		flex-direction: column;
+		.project-copy {
+			margin-right: 0;
+		}
+	}
+	
+	.pieces figure {
+		width: 100%;
+		margin: 0;
+	}
+
+	.project-copy {
+		margin-top: 3%;
+		width: 97%;
+		margin-left: 0;
+	}
+
+	//Skills & Tools section
 
 	.skills-icons figure,
 	.tools-icons figure {
@@ -188,6 +236,7 @@
 }
  
 @media (max-width: 687px) {
+	// header text
 	.hero-text {
 		text-align: center;
 	}
@@ -199,7 +248,52 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-	body {
-		border-top: 10px solid yellow;
+	.wrapper {
+		width: 90%;
+	}
+
+	section {
+		padding: 50px 20px;
+	}
+
+	h2 {
+		font-size: 3.75rem;
+	}
+
+	h3 {
+		font-size: 5rem;
+	}
+
+	h4 {
+		margin-top: 3%;
+		font-size: 2rem;
+	}
+
+	.project-copy {
+		margin-bottom: 25%;
+	}
+}
+
+
+@media (max-width: 450px) {
+	// Portfolio section
+	.project-copy h4 {
+		font-size: 2.5rem;
+	}
+
+	// Contact Section
+	.contact h3 {
+		font-size: 7rem;
+	}
+
+	h5 {
+		font-size: 3.5rem;
+	}
+
+	// Contact Form
+	.contact .wrapper form input[type="text"],
+	.contact .wrapper form input[type="email"],
+	.contact .wrapper form textarea {
+		width: 300px;
 	}
 }

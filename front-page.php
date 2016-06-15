@@ -21,17 +21,15 @@
               <div class="bio-copy">
                 <h3>about me</h3>
                 <p class="bio-blurb"><?php the_field('bio'); ?></p> <!-- bio blurb custom field -->
-                <div class="socmed">
-                  <i class="fa fa-twitter"></i>
-                  <i class="fa fa-github"></i>
-                  <i class="fa fa-linkedin"></i>
-                  <i class="fa fa-"></i>
-                  <i class="fa fa-"></i>
+                <div class="socmed"> <!-- social media icons -->
+                  <a href="https://twitter.com/danamcenteno"><i class="fa fa-twitter" target="_blank"></i></a>
+                  <a href="https://github.com/danacenteno" target="_blank"><i class="fa fa-github"></i></a>
+                  <a href="https://ca.linkedin.com/in/danacenteno"><i class="fa fa-linkedin" target="_blank"></i></a>
                 </div>
               </div>
 
               <?php $image = get_field('bio_image'); ?> <!-- bio image custom field 1/2-->
-              <img class="bio-image" src="<?php echo $image['sizes']['large'] ?>"> <!-- bio image custom field 2/2-->
+              <img class="bio-image" src="<?php echo $image['sizes']['large'] ?>" alt="A portrait of Dana Centeno"> <!-- bio image custom field 2/2-->
             </div> <!-- .wrapper ends -->
           </section> <!-- end .about section -->
 
@@ -74,7 +72,7 @@
               <div class="links">
                 <button class="live"><a href="<?php the_field('live_link') ?>">See it live!</a></button>
 
-                <button class="live"><a href="<?php the_field('gh_link') ?>">See it on <i class="fa fa-github"></i></a></button>
+                <!-- <button class="live"><a href="<?php the_field('gh_link') ?>">See it on <i class="fa fa-github"></i></a> --></button>
               </div>
             </div> <!-- .project-copy ends -->
           </div> <!-- .pieces container ends -->

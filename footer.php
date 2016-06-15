@@ -7,19 +7,17 @@
 	  <div class="wrapper"> <!-- .wrapper starts -->
 	    <div class="contact-blurb">
 	      <h5>Interested in working together?</h5>
-	      <p>If you would like to get in touch, say hello, or feel like starting a nerdy conversation at all, please feel free to email me at hello@danacenteno.com, or you can fill out the form to your right.</p>
+	      <p>If you would like to get in touch, say hello, or feel like starting a nerdy conversation at all, please feel free to email me at hello@danacenteno.com, or you can fill out the form.</p>
 
 	      <p>You can also find me at the links below!</p>
 
 	      <div class="socmed"> <!-- social media icons -->
-	        <i class="fa fa-twitter"></i>
-	        <i class="fa fa-github"></i>
-	        <i class="fa fa-linkedin"></i>
-	        <i class="fa fa-"></i>
-	        <i class="fa fa-"></i>
+	        <a href="https://twitter.com/danamcenteno" target="_blank"><i class="fa fa-twitter"></i></a>
+	        <a href="https://github.com/danacenteno" target="_blank"><i class="fa fa-github"></i></a>
+	        <a href="https://ca.linkedin.com/in/danacenteno" target="_blank"><i class="fa fa-linkedin"></i></a>
 	      </div>
 	    </div>
-
+		
 	    <form> <!-- contact form starts -->
 	      <?php the_field('contact_form') ?>
 	    </form> <!-- contact form ends -->
