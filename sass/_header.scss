@@ -1,5 +1,9 @@
 header {
 	background: $mauve;
+	background-image: url(images/hero-image.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
 
 	.container {
 		display: flex;

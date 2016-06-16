@@ -18,9 +18,19 @@
 	      </div>
 	    </div>
 		
-	    <form> <!-- contact form starts -->
-	      <?php the_field('contact_form') ?>
-	    </form> <!-- contact form ends -->
+	   <!--  <form> --> <!-- contact form starts -->
+	      <?php //the_field('contact_form') ?>
+	    <!-- </form> --> <!-- contact form ends -->
+
+	    <form action="http://www.focuspocus.io/magic/danamariecenteno@gmail.com" 
+	    method="POST">
+	    <input type="text" placeholder="Name*">
+	    <input type="email" placeholder="Email*">
+	    <input type="text" placeholder="Subject">
+	    <textarea name="" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
+	    <input type="submit">
+	    </form>
+
 	  
 	  </div> <!-- .wrapper ends -->
 	</section> <!-- .contact section ends -->
