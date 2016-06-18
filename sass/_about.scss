@@ -2,17 +2,9 @@
 	background: $newsprint;
 
 	h3 {
+		display: inline-block;
 		position: relative;
-		&:after {
-			position: absolute;
-			content: '';
-			border-bottom: 7px solid $silver-blue;
-			top:0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			width: 45%;
-		}
+		border-bottom: 7px solid $silver-blue;
 	}
 
 	p {
@@ -21,9 +13,23 @@
 }
 
 .about .wrapper {
+	z-index: 10;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
+	position: relative;
+}
+
+.big-a {
+	p {
+		font-family: 'Lato', sans-serif;
+		font-weight: bolder;
+		font-size: 50rem;
+		color: rgba(197,179,193,0.5);
+		position: absolute;
+		left: -7%;
+		top: 20%;
+	}
 }
 
 .bio-copy {

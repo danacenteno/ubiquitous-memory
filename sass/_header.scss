@@ -2,8 +2,9 @@ header {
 	background: $mauve;
 	background-image: url(images/hero-image.jpg);
 	background-size: cover;
-	background-position: center center;
+	background-position: center;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
 
 	.container {
 		display: flex;
@@ -28,7 +29,7 @@ nav {
 }
 
 .hero {
-	width: 100%;
+	max-width: 100%;
 	margin: auto;
 	height: 100vh;
 	padding: 20px;
@@ -42,6 +43,8 @@ nav {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	top: -5%;
 }
 
 

@@ -19,17 +19,15 @@
 	    </div>
 		
 	   <!--  <form> --> <!-- contact form starts -->
-	      <?php //the_field('contact_form') ?>
-	    <!-- </form> --> <!-- contact form ends -->
-
 	    <form action="http://www.focuspocus.io/magic/danamariecenteno@gmail.com" 
 	    method="POST">
-	    <input type="text" placeholder="Name*">
-	    <input type="email" placeholder="Email*">
-	    <input type="text" placeholder="Subject">
-	    <textarea name="" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
-	    <input type="submit">
+		    <input name="name required" type="text" placeholder="Name">
+		    <input name="email required" type="email" placeholder="Email">
+		    <input name="subject" type="text" placeholder="Subject">
+		    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
+		    <input type="submit">
 	    </form>
+	    <!-- </form> --> <!-- contact form ends -->
 
 	  
 	  </div> <!-- .wrapper ends -->

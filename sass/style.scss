@@ -32,6 +32,8 @@ img {
 }
 
 body {
+	max-width: 1280px;
+	width: 100%;
 	color: #333;
 }
 
@@ -61,21 +63,18 @@ section {
 	padding: 50px;
 }
 
-
-//hidden contact form
-// ***** ASK ABOUT THIS!!! ***** //
+//Hidden Contact Form
 
 // .slider {
-//     position: relative;
-//     z-index: 2;
-//     // top: 100vh;
-//     bottom: 100vh;
+// 	height: 100%;
+// 	position: relative;
+// 	bottom: 100vh;
 // }
 
 // footer {
-//     position: fixed;
-//     bottom: 0;
-//     width: 100%;
+// 	bottom: 0;
+// 	position: fixed;
+// 	top: 100vh;
 // }
 
 //MEDIA QUERIES

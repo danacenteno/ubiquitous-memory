@@ -1,4 +1,4 @@
-  <?php
+<?php
 
   /*
   	Template Name: Full Page, No Sidebar
@@ -13,11 +13,13 @@
 
           <section id="bio" class="about"> <!-- start .about section -->
 
-          <!-- floating parallax letter here: -->
-            <!-- <div class="big-a">
-              <p>A</p>
-            </div> -->
+            <div class="big-a">
+              <p data-stellar-ratio="2">A</p>
+            </div>
+
             <div class="wrapper"> <!-- .wrapper starts -->
+              <!-- floating parallax letter here: -->
+
               <div class="bio-copy">
                 <h3>about me</h3>
                 <p class="bio-blurb"><?php the_field('bio'); ?></p> <!-- bio blurb custom field -->
@@ -54,7 +56,7 @@
               <?php $image = get_field('project_image'); ?> 
               <img src="<?php echo $image['sizes']['large'] ?>">
             </figure>
-
+            
             <div class="project-copy">
               <!-- .project-copy starts -->
               <h4><?php the_title(); ?></h4>
@@ -72,7 +74,7 @@
               <div class="links">
                 <button class="live"><a href="<?php the_field('live_link') ?>">See it live!</a></button>
 
-                <!-- <button class="live"><a href="<?php the_field('gh_link') ?>">See it on <i class="fa fa-github"></i></a> --></button>
+                <button class="live"><a href="<?php the_field('gh_link') ?>">See it on <i class="fa fa-github"></i></a></button>
               </div>
             </div> <!-- .project-copy ends -->
           </div> <!-- .pieces container ends -->
@@ -89,6 +91,9 @@
     <!--     <h3>Things I know</h3> -->
           <div class="icons wrapper">
             <div class="skills">
+              <div class="big-s">
+                <p data-stellar-ratio="2">S</p>
+              </div>
               <h3>skills</h3>
               <article class="skills-icons"> <!-- .skills starts -->
                 <figure>
@@ -122,6 +127,9 @@
               </article> <!-- .skills-icons ends -->
               </div>
 
+            <div class="big-t">
+              <p data-stellar-ratio="2">T</p>
+            </div>
             <div class="tools">
               <h3>tools</h3>
               <article class="tools-icons"> <!-- .tools starts -->
@@ -163,5 +171,4 @@
         </section> <!-- .skillset section ends -->
     </div> <!-- /.container -->
   </div> <!-- /.main -->
-
 <?php get_footer(); ?>
