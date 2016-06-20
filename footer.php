@@ -21,8 +21,8 @@
 	   <!--  <form> --> <!-- contact form starts -->
 	    <form action="http://www.focuspocus.io/magic/danamariecenteno@gmail.com" 
 	    method="POST">
-		    <input name="name required" type="text" placeholder="Name">
-		    <input name="email required" type="email" placeholder="Email">
+		    <input name="name" type="text" placeholder="Name" required>
+		    <input name="email" type="email" placeholder="Email" required>
 		    <input name="subject" type="text" placeholder="Subject">
 		    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
 		    <input type="submit">
