@@ -258,7 +258,7 @@
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	header {
-		background-repeat: repeat;
+		background-size: cover;
 	}
 	
 	.wrapper {

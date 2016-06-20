@@ -92,13 +92,13 @@ function hackeryou_scripts() {
     true //load in footer
   );
 
-  // wp_enqueue_script(
-  //   'stellar', //handle
-  //   get_template_directory_uri() . '/js/jquery.stellar.js', //source
-  //   array( 'jquery' ), //dependencies
-  //   null, // version number
-  //   true //load in footer
-  // );
+  wp_enqueue_script(
+    'stellar', //handle
+    get_template_directory_uri() . '/js/jquery.stellar.js', //source
+    array( 'jquery' ), //dependencies
+    null, // version number
+    true //load in footer
+  );
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');
