@@ -7,11 +7,11 @@
   get_header(); ?>
 
     <div class="main slider"> <!-- main content starts -->
-      <div class="container">
-        <?php // Start the loop ?>
-        <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+      <?php // Start the loop ?>
+      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-          <section id="bio" class="about"> <!-- start .about section -->
+        <section id="bio" class="about"> <!-- start .about section -->
+          <div class="container">
 
             <div class="big-a">
               <p data-stellar-ratio="2">A</p>
@@ -33,66 +33,69 @@
               <?php $image = get_field('bio_image'); ?> <!-- bio image custom field 1/2-->
               <img class="bio-image" src="<?php echo $image['sizes']['large'] ?>" alt="A portrait of Dana Centeno"> <!-- bio image custom field 2/2-->
             </div> <!-- .wrapper ends -->
-          </section> <!-- end .about section -->
+          </div> <!-- .container ends -->
+        </section> <!-- end .about section -->
 
-        <?php endwhile; // end the loop?>
+      <?php endwhile; // end the loop?>
 
-        <section id="work" class="portfolio"> <!-- .portfolio section starts -->
-        <?php
-          $workQuery = new WP_Query(
-            array(
-              'posts_per_page' => -1,
-              'post_type' => 'portfolio',
-              'order' => 'ASC'
-              )
-            ); ?>
+      <section id="work" class="portfolio"> <!-- .portfolio section starts -->
+        <div class="container">
+          <?php
+            $workQuery = new WP_Query(
+              array(
+                'posts_per_page' => -1,
+                'post_type' => 'portfolio',
+                'order' => 'ASC'
+                )
+              ); ?>
 
-          <?php if ( $workQuery->have_posts() ) : ?>
+            <?php if ( $workQuery->have_posts() ) : ?>
 
-          <?php while ($workQuery->have_posts()) : $workQuery->the_post(); ?>
+            <?php while ($workQuery->have_posts()) : $workQuery->the_post(); ?>
 
-          <div id="<?php echo $post->post_name; ?>" class="pieces"> <!-- .pieces container starts -->
-            <figure>
-              <?php $image = get_field('project_image'); ?> 
-              <img src="<?php echo $image['sizes']['large'] ?>">
-            </figure>
-            
-            <div class="project-copy">
-              <!-- .project-copy starts -->
-              <h4><?php the_title(); ?></h4>
-          
-              <?php the_sub_field('skills'); ?>
-              <?php while( has_sub_field('skills') ): ?>
+            <div id="<?php echo $post->post_name; ?>" class="pieces"> <!-- .pieces container starts -->
+              <figure>
+                <?php $image = get_field('project_image'); ?> 
+                <img src="<?php echo $image['sizes']['large'] ?>">
+              </figure>
               
-              <div class="skills">
-                <p><?php the_sub_field('skills_tags'); ?></p>
-              </div>
-              <?php endwhile; ?>
+              <div class="project-copy">
+                <!-- .project-copy starts -->
+                <h4><?php the_title(); ?></h4>
+            
+                <?php the_sub_field('skills'); ?>
+                <?php while( has_sub_field('skills') ): ?>
+                
+                <div class="skills">
+                  <p><?php the_sub_field('skills_tags'); ?></p>
+                </div>
+                <?php endwhile; ?>
 
-              <p class="description"><?php the_field('project_description');?></p>
+                <p class="description"><?php the_field('project_description');?></p>
 
-              <div class="links">
-                <button class="live"><a href="<?php the_field('live_link') ?>">See it live!</a></button>
+                <div class="links">
+                  <button class="live"><a href="<?php the_field('live_link') ?>">View live</a></button>
 
-                <button class="live"><a href="<?php the_field('gh_link') ?>">See it on <i class="fa fa-github"></i></a></button>
-              </div>
-            </div> <!-- .project-copy ends -->
-          </div> <!-- .pieces container ends -->
-          <?php endwhile; ?>
+                  <button class="live"><a href="<?php the_field('gh_link') ?>">View GitHub</a></button>
+                </div>
+              </div> <!-- .project-copy ends -->
+            </div> <!-- .pieces container ends -->
+            <?php endwhile; ?>
 
-          <?php wp_reset_postdata(); ?>
+            <?php wp_reset_postdata(); ?>
 
-          <?php else:  ?>
-              [stuff that happens if there aren't any posts]
-          <?php endif; ?>
-        </section> <!-- .portfolio section ends -->
+            <?php else:  ?>
+                [stuff that happens if there aren't any posts]
+            <?php endif; ?>
+        </div> <!-- .container ends -->
+      </section> <!-- .portfolio section ends -->
 
-        <section id="skillz" class="skillset"> <!-- .skillset section starts -->
-    <!--     <h3>Things I know</h3> -->
+      <section id="skillz" class="skillset"> <!-- .skillset section starts -->
+        <div class="container">
           <div class="icons wrapper">
             <div class="skills">
               <div class="big-s">
-                <p data-stellar-ratio="2">S</p>
+                <p data-stellar-ratio="0.5">S</p>
               </div>
               <h3>skills</h3>
               <article class="skills-icons"> <!-- .skills starts -->
@@ -166,9 +169,9 @@
                   <figcaption>Trello</figcaption>
                 </figure>
               </article> <!-- .tools-icons ends -->
-            </div>
-          </div> <!-- .icons ends -->
-        </section> <!-- .skillset section ends -->
-    </div> <!-- /.container -->
+            </div> <!-- .tools ends -->
+          </div> <!-- .icons, .wrapper ends -->
+        </div> <!-- .container ends -->
+      </section> <!-- .skillset section ends -->
   </div> <!-- /.main -->
 <?php get_footer(); ?>

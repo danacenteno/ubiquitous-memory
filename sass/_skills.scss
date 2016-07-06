@@ -1,5 +1,5 @@
 .skillset {
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	background: $newsprint;
 	position: relative;
 	h3 {
@@ -17,6 +17,7 @@
 			position: absolute;
 			left: -5%;
 			top: -67%;
+			// z-index: 1;
 		}
 	}
 

@@ -22,6 +22,7 @@
 
 .big-a {
 	p {
+		z-index: 1;
 		font-family: 'Lato', sans-serif;
 		font-weight: bolder;
 		font-size: 50rem;
@@ -55,14 +56,3 @@
 	bottom: 5%;
 	width: 40%;
 }	
-
-// .big-a p {
-// 	position: fixed;
-// 	top:0;
-// 	right: 0;
-// 	left: 0;
-// 	z-index: 0;
-// 	font-size: 35rem;
-// 	font-weight: bold;
-// 	color: rgba(197,179,193,0.5);
-// }
