@@ -11,8 +11,8 @@
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <section id="bio" class="about"> <!-- start .about section -->
-          <div class="container">
 
+          <div class="container">
             <div class="big-a">
               <p data-stellar-ratio="2">A</p>
             </div>

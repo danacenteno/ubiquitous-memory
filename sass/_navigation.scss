@@ -1,13 +1,13 @@
 ul.menu {
 	display: flex;
 	flex-direction: row-reverse;
-	z-index: 10000000;
+	z-index: 100;
 	position: fixed;
 	margin: 0;
 	padding: 0;
 	transform: rotate(270deg);
 	top: 50%;
-	left: -11.5%;
+	left: -130px;
 	li {
 		display: inline;
 		margin-right: 10px;
@@ -20,7 +20,6 @@ ul.menu {
 			transition: color 0.2s linear;
 			&:hover,
 			&:focus {
-				// color: #fff;
 				border-bottom: 2px solid $dark-accent;
 			}
 		}

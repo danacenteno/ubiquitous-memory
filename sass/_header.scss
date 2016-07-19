@@ -15,7 +15,7 @@ header {
 			color: navy;
 			transition: color 0.3s linear;
 			&:hover {
-				color: teal;
+				color: $dark-accent;
 			}
 		}
 	}

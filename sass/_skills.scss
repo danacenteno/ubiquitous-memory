@@ -1,5 +1,4 @@
 .skillset {
-	// overflow-x: hidden;
 	background: $newsprint;
 	position: relative;
 	h3 {
@@ -15,9 +14,8 @@
 			font-size: 40rem;
 			color: rgba(115,131,158,0.2);
 			position: absolute;
-			left: -5%;
+			left: -60px;
 			top: -67%;
-			// z-index: 1;
 		}
 	}
 
@@ -28,10 +26,10 @@
 			font-size: 40rem;
 			color: rgba(197,179,193,0.3);
 			position: absolute;
-			right: -3%;
+			right: -35px;
 			top: -30%;
+		}
 	}
-}
 }
 
 .icons {
